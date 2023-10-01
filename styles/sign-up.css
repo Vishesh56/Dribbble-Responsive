@@ -1,0 +1,192 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  margin-left: 12vw;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.video-wrapper {
+  width: 25%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+}
+
+.logo-white {
+  position: relative;
+  width: 100px;
+  top: 10%;
+}
+.video-promo {
+  position: relative;
+}
+.heading {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.google {
+  cursor: pointer;
+  margin-top: 2vw;
+  padding: 1vw 8.5vw;
+  border-radius: 2vw;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid grey;
+  font-size: 1vw;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.g-logo {
+  width: 2.5vw;
+  cursor: pointer;
+}
+
+.text {
+  cursor: pointer;
+}
+
+#or {
+  margin-top: 1.5vw;
+  color: grey;
+  width: 70%;
+  text-align: center;
+}
+
+.email {
+  cursor: pointer;
+  margin-top: 2vw;
+  padding: 1vw 10vw;
+  border-radius: 2vw;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid grey;
+  font-size: 1vw;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-t {
+  color: grey;
+  margin-top: 3vw;
+  text-align: center;
+  width: 65%;
+  text-decoration: none;
+  font-size: 0.8vw;
+}
+.uc {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.text-sign {
+  margin-top: 2vw;
+  color: grey;
+  font-size: 1vw;
+  text-align: center;
+  width: 70%;
+}
+.text-sign a {
+  text-decoration: none;
+  color: black;
+  transition: text-decoration 0.15s, cursor 0.15s;
+}
+.text-sign a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .video-wrapper {
+    display: none;
+  }
+
+  .main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    margin: 0;
+    width: 100%;
+    padding: 0 6vw;
+  }
+
+  .heading {
+    font-size: 7vw;
+    margin-bottom: 10vw;
+  }
+
+  .google {
+    font-size: 4.2vw;
+    padding: 5vw 7vw;
+    width: 100%;
+    border-radius: 10vw;
+  }
+
+  .g-logo {
+    width: 10vw;
+  }
+
+  #or {
+    margin-top: 5vw;
+    width: 100%;
+  }
+
+  .email {
+    margin-top: 5vw;
+    font-size: 4.2vw;
+    padding: 5vw 7vw;
+    width: 100%;
+    border-radius: 10vw;
+  }
+
+  .end-t {
+    width: 100%;
+    margin-top: 15vw;
+    font-size: 3vw;
+  }
+
+  .text-sign {
+    margin-top: 5vw;
+    font-size: 3vw;
+    width: 100%;
+  }
+}
